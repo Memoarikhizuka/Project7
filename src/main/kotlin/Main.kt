@@ -1,27 +1,21 @@
 fun main(args: Array<String>) {
 
-    println("Hello from Kotlin")
+    val list = mutableListOf(
+        Student(name = "Ivan", age=19),
+        Student(age=20, name="Sergey")
+    )
 
-    var value: Int = 5
-    var sum: Double = 10.5
-    var text: String = "Hello kotlin"
+    /*   for(studentInList in list){
+           println("Student in list ${studentInList.name}")
+       }*/
 
-    if (value > 5) {
-        println(">5")
-    }
+ /*   list.forEach {student->
+        println("Student in list ${student.name}")
+    }*/
 
-    when (value) {
-        in 1.. 4 -> {
+    val setCollectiom = setOf("123213","sdfgfdg")
 
-        }
-        5 -> {
-            println(">5555")
-        }
-        10 -> {
+    val mapCollection = mapOf("key" to "value", "key2" to "value2")
+    println("${mapCollection["key2"]}")
 
-        }
-        else -> {
-
-        }
-    }
 }
